@@ -1,18 +1,12 @@
 var app = new Vue({
     el: '#app',
     data:{
-        title: "Vuelos Internacionales",
-        flights: ["Mexico","Colombia","Arentina"],
-        nationals: [
-            {
-                idFlight: "2255",
-                flight: "Ciudad de Mexico"
-            },
-            {
-                idFlight: "2256",
-                flight: "Cancún"
-            }
-        ]
+        cart: 0
+    },
+    methods: {
+        addToCart() {
+            this.cart+=1;
+        }
     }
 })
 

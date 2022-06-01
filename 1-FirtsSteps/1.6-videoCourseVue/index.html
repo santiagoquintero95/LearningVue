@@ -9,12 +9,21 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" :style="styleContect">
         <div>
-            <button @click="addToCart">Add to Cart</button>
+            <span :style="{backgroundColor: backgroundColor}">Box</span>
         </div>
         <div>
-            <span>Cart{{cart}}</span>
+            <span :style="backgroundColor2">Box</span>
+        </div>
+        <div>
+            <span :style="styleObject">Box</span>
+        </div>
+        <div>
+            <Button :style="styleObject2" :disabled="disabled">disabled</Button>
+        </div>
+        <div>
+            <Button :style="styleObject3">Able</Button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
